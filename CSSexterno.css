@@ -1,0 +1,386 @@
+/*Ejercicio 21 - Crea un documento HTML vacío y enlaza un archivo CSS externo para cambiar el color de
+fondo de la página.*/
+
+body {
+    background-color: rgb(173, 173, 173);
+}
+
+/*Ejercicio 22 - Estiliza un párrafo de texto para cambiar el color del texto y el tamaño de fuente.*/
+
+.texto {
+    color: white;
+    font-size: 16px;
+    padding-right: 50;
+    position: absolute;
+    top: 49%;
+    left: 85%
+}
+
+/*Ejercicio 23 - Agrega un borde alrededor de una imagen en tu página.*/
+
+.cine1 img{
+    align-items: center;
+    background-color: white;
+
+
+    width: 100px;
+    border-style: solid;
+    border-color: rgb(100, 100, 100);
+    border-radius: 50px;
+    border-width: 10px;
+    box-shadow: 0 0 70px black;
+}
+
+/*Ejercicio 24 - Estiliza un enlace (<a>) para cambiar el color y el efecto al pasar el mouse (hover).*/
+
+a:link {
+    color: red
+}
+
+a:visited {
+    color: red
+}
+
+a:hover {
+    color: blueviolet
+}
+
+a:active {
+    color: blue
+}
+
+footer img {
+    width: 50px;
+    border: none;
+}
+/*Ejercicio 25 - Centra un elemento en el medio de la página tanto horizontal como verticalmente.*/
+
+
+/* Ejercicio 26 - Crea un botón personalizado con efectos de hover.*/
+
+header img {
+    width: 3rem;
+    border: none;
+    float: right;
+    display: flex;
+    margin-right: 1%;
+    margin-top: 4%;
+    transition: transform 0.3s
+}
+
+header img:hover {
+    background-color: white;
+    border-radius: 50px;
+    padding: 1px;
+}
+
+/* Ejercicio 27 - Estiliza una lista no ordenada (<ul>) para cambiar el estilo de viñetas (list-style).*/
+
+ul {
+    list-style-type: square;
+}
+
+/* Ejercicio 28 - Crea un menú de navegación horizontal utilizando listas (<ul>, <li>) y estiliza los elementos
+de menú.*/
+
+nav ul {
+    background-color: rgb(250, 128, 128);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+nav ul li {
+    display: inline;
+}
+  
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:link {
+    color: white
+}
+
+nav ul li a:visited {
+    color: white
+}
+
+nav ul li a:hover {
+    background-color: #eee;
+    color: #000;
+}
+
+/* Ejercicio 29 - Estiliza un formulario de contacto con diferentes colores de fondo para los campos de
+entrada y un botón personalizado.*/
+
+.formulario {
+    display: inline-block;
+    background-color: rgb(252, 191, 191);
+    padding: 8.5px 30px;
+    padding-left: 75px;
+    padding-right: 40px;
+}
+
+::placeholder {
+    color: rgb(124, 124, 124);
+}
+
+nav ul form button {
+    background-color: rgb(253, 41, 3);
+    color: white;
+    border-radius: 50px;
+}
+
+nav ul form button:hover {
+    background-color: rgb(113, 114, 114);
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+nav ul form button:active {
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/*Ejercicio 30 - Crea una barra de navegación fija en la parte superior de la página que se mantenga
+visible al desplazarse hacia abajo.*/
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    transition: top 0.3s;
+}
+  
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+  
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/*Ejercicio 31 - Diseña una tabla con estilos de borde y colores alternos para filas.*/
+
+table {
+    width: 40%;
+    border-collapse: collapse;
+    float: right;
+    margin-top: 30px
+}
+
+table tr th {
+    font-size: 200%;
+    color: white;
+    background-color: rgb(253, 41, 3);
+    text-align: center;
+    border: solid rgb(252, 191, 191) 1px;    
+}
+
+table tr {
+    background-color: rgb(250, 128, 128);
+    color: white;    
+}
+
+table tr:hover {
+    background-color: rgb(252, 191, 191);
+    color: #000;
+    transition: top 0.3s;
+}
+
+table td {
+    font-size: 120%;
+    text-align: center;
+    border: solid rgb(252, 191, 191) 1px;   
+}
+
+table tr td img {
+    border: none;
+    border-radius: 0%;
+    width: 20%;
+    image-orientation: 20%;
+    padding-top: 2%;
+}
+
+/*Ejercicio 32 - Estiliza un encabezado (<header>) con una imagen de fondo y texto superpuesto.*/
+
+header {
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh; 
+    color: rgb(253, 41, 3);
+    align-items: center;
+}
+
+header h1 {
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 4%;
+    text-decoration: overline underline;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 10)
+}
+
+/*Ejercicio 33 - Crea un diseño de dos columnas sin utilizar tablas, solo CSS.*/
+
+.contenedor {
+    display: flex;
+}
+  
+.columna {
+    font-size: 20px;
+    margin-top: 30px;
+    flex: 1;
+    padding: 20px;
+}
+  
+.columna1 {
+    background-color: #f0f0f0;
+}
+.columna2 {
+    background-color: #e0e0e0;
+}
+
+/*Ejercicio 34 - Aplica animaciones CSS a un elemento para que se mueva o cambie de color.*/
+
+.animated-element {
+    width: 25px;
+    height: 20px;
+    background-color: blue;
+    animation: moveAndChangeColor 2s infinite alternate;
+}
+
+@keyframes moveAndChangeColor {
+    0% {
+        transform: translateX(0);
+        background-color: blue;
+    }
+    50% {
+        transform: translateX(100px);
+        background-color: red;
+    }
+    100% {
+        transform: translateX(0);
+        background-color: blue;
+    }
+}
+
+/*Ejercicio 35 - Estiliza un formulario de búsqueda con un campo de entrada y un botón de búsqueda*/
+
+.search-form {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    margin-top: 2px;
+    margin-right: 10px
+}
+
+.search-input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: rgb(253, 41, 3);
+    color: white;
+    border: 1px solid rgb(253, 41, 3);
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+.search-button:hover {
+    background-color: rgb(250, 128, 128);
+    border-color: rgb(250, 128, 128);
+}
+
+/*Ejercicio 36 - Diseña una galería de imágenes en forma de cuadrícula con efectos de zoom al pasar el
+mouse.*/
+
+.gallery {
+    padding-right: 4%;
+    padding-left: 4%;
+    padding-top: 4%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-gap: 40px;
+}
+
+.image img {
+    border: none;
+    border-radius: 50px;
+    max-width: 100%;
+
+}
+
+.image:hover img {
+    background-color: white;
+    border-radius: 50px;
+    padding: 8px;
+    width: 95%;
+    transition: top 0.9s;
+}
+
+/*Ejercicio 37 - Crea una página web responsiva que se ajuste a diferentes tamaños de pantalla utilizando
+CSS media queries.*/
+
+@media only screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header, nav, main, footer {
+        padding: 10px;
+    }
+}
+
+/*Ejercicio 38. Implementa un efecto de sombra elevada (box-shadow) en un elemento.*/
+
+.image:hover img {
+    box-shadow: 0 0 70px white;
+}
+
+/*Ejercico 39. Diseña un menú de navegación desplegable (dropdown) utilizando solo CSS.*/
+
+.dropdown-content {
+    
+    display: none;
+    position: none;
+    background-color: rgb(250, 128, 128);
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+
+    display: block;
+}
+
+/*Ejercicio 40 ⬆️⬆️⬆️⬆️⬆️⬆️⬆️*/
